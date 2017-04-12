@@ -1,0 +1,55 @@
+//
+//  Free-Prefix.pch
+//  Free
+//
+//  Created by Anthony Fernandez on 28/03/2017.
+//  Copyright © 2017 GENyUS. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+// Custom Log function
+#ifdef DEBUG
+#define Log( s, ... )               NSLog( @"(%@) %@", [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] stringByDeletingPathExtension], [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define Log( s, ... )
+#endif
+
+// Custom device functions
+#define IS_IPHONE                   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_IPAD                     (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE_4                 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 480.0)
+#define IS_IPHONE_5                 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0)
+#define IS_IPHONE_6                 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 667.0)
+#define IS_IPHONE_6PLUS             (IS_IPHONE && [[UIScreen mainScreen] nativeScale] == 3.0f)
+#define IS_IPHONE_6_PLUS            (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 736.0)
+
+// Custom device orientations
+#define IS_PORTRAIT                 UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])
+#define IS_LANDSCAPE                UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])
+
+// Custom string protection
+#define NNIL(s)                     (s == nil ? @"" : s)
+
+// Custom dimensions
+#define WINDOW                      [[[UIApplication sharedApplication] delegate] window]
+#define SCREEN_WIDTH                [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT               [UIScreen mainScreen].bounds.size.height
+#define STATUS_BAR_HEIGHT           [[UIApplication sharedApplication] statusBarFrame].size.height
+#define NAVIGATION_BAR_HEIGHT       self.navigationController.navigationBar.frame.size.height
+
+// Custom colors
+#define RGB(r,g,b)                  [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define RGBA(r,g,b,a)               [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+// Custom conversions
+#define SBOOL(v)                    (v == 1 ? @"YES" : @"NO")
