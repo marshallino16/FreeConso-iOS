@@ -92,7 +92,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ConsoStore, sharedStore);
                          }
                          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                              NSLog(@"Error: %@", error);
-                             completionHandler(nil, nil);
+                             completionHandler(nil, [NSError errorWithDomain:@"ConsoStore" code:999 userInfo:@{@"Error": error}]);
                          }
      ];
 }

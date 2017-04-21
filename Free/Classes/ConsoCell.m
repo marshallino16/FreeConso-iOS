@@ -59,7 +59,7 @@
         self.tagLabel.text = @"DATA CONSO";
         self.tagLabel.backgroundColor = RGB(133, 194, 4);
         
-        NSString *consoLeft = [NSString stringWithFormat:@"%@ left", NNIL(conso.dataConsoLeft)];
+        NSString *consoLeft = [NSString stringWithFormat:@"%@ restants", NNIL(conso.dataConsoLeft)];
         self.consoLabel.text = NNIL(consoLeft);
         self.overageLabel.text = NNIL(conso.DataConsoOverage);
     }

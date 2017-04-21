@@ -1,6 +1,6 @@
 //
 //  JSONHelper.m
-//  Tisseo
+//  Free
 //
 //  Created by Junior on 20/09/16.
 //  Copyright © 2016 GENyUS. All rights reserved.

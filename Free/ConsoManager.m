@@ -8,7 +8,7 @@
 
 #import "ConsoManager.h"
 #import "ConsoStore.h"
-
+#import "Conso.h"
 
 
 #pragma mark - Conso Manager: Implementation
@@ -19,6 +19,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ConsoManager, sharedManager);
 
 
 - (void)fetchAllConsoInfosWithCompletionHandler:(CompletionHandler)completionHandler login:(NSString *)login password:(NSString *)password {
+    
     [[ConsoStore sharedStore] fetchAllConsoInfosWithCompletionHandler:completionHandler login:login password:password];
 }
 

@@ -164,17 +164,18 @@
 - (void)generateDataVisualizer {
     
     UIView *viewMax = [[UIView alloc] initWithFrame:CGRectMake(8, 0, self.consoDataContainer.frame.size.width - 16, self.consoDataContainer.frame.size.height)];
-    viewMax.backgroundColor =  RGBA(46, 61, 16, 0.6);
+    viewMax.backgroundColor =  RGBA(63, 65, 69, 0.8);
     viewMax.layer.cornerRadius = (self.consoDataContainer.frame.size.height / 2);
     
     UIView *viewCurrent = [[UIView alloc] initWithFrame:CGRectMake(8, 0, 0, self.consoDataContainer.frame.size.height)];
     viewCurrent.backgroundColor =  RGB(133, 194, 4);
     viewCurrent.layer.cornerRadius = (self.consoDataContainer.frame.size.height / 2);
     
-    UILabel *labelConsoData = [[UILabel alloc] initWithFrame:CGRectMake(((self.consoDataContainer.bounds.size.width - 100) / 2), 0, 100, self.consoDataContainer.frame.size.height)];
+    UILabel *labelConsoData = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.consoDataContainer.frame.size.width - 16, self.consoDataContainer.frame.size.height)];
     labelConsoData.backgroundColor = [UIColor clearColor];
     labelConsoData.textColor = [UIColor whiteColor];
-    labelConsoData.text = NNIL(self.conso.dataConso);
+    labelConsoData.textAlignment = NSTextAlignmentCenter;
+    labelConsoData.text = [NSString stringWithFormat:@"%@ consommés", NNIL(self.conso.dataConso)];
     labelConsoData.font = [UIFont boldSystemFontOfSize:[UIFont systemFontSize]];
     
     [self.consoDataContainer addSubview:viewMax];

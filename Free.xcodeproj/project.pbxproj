@@ -10,6 +10,7 @@
 		7904C5571E8D50DA004B51C1 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7904C5551E8D50DA004B51C1 /* LoginController.m */; };
 		7904C5581E8D50DA004B51C1 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7904C5561E8D50DA004B51C1 /* LoginController.xib */; };
 		7904C55D1E8E9071004B51C1 /* StoredDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7904C55C1E8E9071004B51C1 /* StoredDataManager.m */; };
+		7994BD8D1EAA4F69007A8641 /* SnackBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994BD8C1EAA4F69007A8641 /* SnackBarView.m */; };
 		79E404111E896EFE00B92988 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E4040F1E896EFE00B92988 /* LaunchScreen.storyboard */; };
 		79E404171E896F0E00B92988 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E404131E896F0E00B92988 /* AppDelegate.m */; };
 		79E404191E896F0E00B92988 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E404151E896F0E00B92988 /* main.m */; };
@@ -48,6 +49,8 @@
 		7904C5561E8D50DA004B51C1 /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginController.xib; path = Free/Classes/LoginController.xib; sourceTree = "<group>"; };
 		7904C55B1E8E9071004B51C1 /* StoredDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoredDataManager.h; path = Free/Classes/StoredDataManager.h; sourceTree = "<group>"; };
 		7904C55C1E8E9071004B51C1 /* StoredDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoredDataManager.m; path = Free/Classes/StoredDataManager.m; sourceTree = "<group>"; };
+		7994BD8B1EAA4F69007A8641 /* SnackBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SnackBarView.h; path = Free/Classes/SnackBarView.h; sourceTree = "<group>"; };
+		7994BD8C1EAA4F69007A8641 /* SnackBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnackBarView.m; path = Free/Classes/SnackBarView.m; sourceTree = "<group>"; };
 		79E404101E896EFE00B92988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Free/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79E404121E896F0E00B92988 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Free/AppDelegate.h; sourceTree = "<group>"; };
 		79E404131E896F0E00B92988 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Free/AppDelegate.m; sourceTree = "<group>"; };
@@ -119,6 +122,15 @@
 			name = "Stored Data Manager";
 			sourceTree = "<group>";
 		};
+		7994BD8A1EAA4F50007A8641 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				7994BD8B1EAA4F69007A8641 /* SnackBarView.h */,
+				7994BD8C1EAA4F69007A8641 /* SnackBarView.m */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
 		79E404061E896EA400B92988 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,9 +184,10 @@
 		79E4040B1E896ECD00B92988 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				7994BD8A1EAA4F50007A8641 /* Misc */,
 				79E4040C1E896ED500B92988 /* App Delegate */,
 				79E4040E1E896EE300B92988 /* Login */,
-				79E4040D1E896EDC00B92988 /* Home */,
+				79E4040D1E896EDC00B92988 /* Conso */,
 			);
 			name = Screen;
 			sourceTree = "<group>";
@@ -188,7 +201,7 @@
 			name = "App Delegate";
 			sourceTree = "<group>";
 		};
-		79E4040D1E896EDC00B92988 /* Home */ = {
+		79E4040D1E896EDC00B92988 /* Conso */ = {
 			isa = PBXGroup;
 			children = (
 				79E4043D1E8A6DAB00B92988 /* ConsoController.h */,
@@ -196,7 +209,7 @@
 				79E4043F1E8A6DAB00B92988 /* ConsoController.xib */,
 				79EB88181E8C5458007CA100 /* Cells */,
 			);
-			name = Home;
+			name = Conso;
 			sourceTree = "<group>";
 		};
 		79E4040E1E896EE300B92988 /* Login */ = {
@@ -268,17 +281,9 @@
 		79EB88181E8C5458007CA100 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				79EB88191E8C5461007CA100 /* Data Header Cell */,
 				79EB881A1E8C546A007CA100 /* Conso Cell */,
 			);
 			name = Cells;
-			sourceTree = "<group>";
-		};
-		79EB88191E8C5461007CA100 /* Data Header Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Data Header Cell";
 			sourceTree = "<group>";
 		};
 		79EB881A1E8C546A007CA100 /* Conso Cell */ = {
@@ -354,7 +359,8 @@
 				TargetAttributes = {
 					926C27851D086829001FBCC2 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 7VU9XC3L35;
+						DevelopmentTeam = QC35MT888M;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -456,6 +462,7 @@
 				79E404321E896F3700B92988 /* ViewHelper2.m in Sources */,
 				79E4042B1E896F3700B92988 /* ConsoStore.m in Sources */,
 				79E404171E896F0E00B92988 /* AppDelegate.m in Sources */,
+				7994BD8D1EAA4F69007A8641 /* SnackBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,8 +572,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7VU9XC3L35;
+				DEVELOPMENT_TEAM = QC35MT888M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -575,9 +581,10 @@
 				GCC_PREFIX_HEADER = "Free/Classes/Free-Prefix.pch";
 				INFOPLIST_FILE = Free/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.genyus.Free;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.genyus.FreeMobile-Conso";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b0200205-1c5f-442b-8180-d422bcdcb6ec";
+				PROVISIONING_PROFILE_SPECIFIER = "Free Conso DEV";
 			};
 			name = Debug;
 		};
@@ -586,9 +593,8 @@
 			baseConfigurationReference = 32C8D8F740B53C7A1C3BF424 /* Pods-Free.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7VU9XC3L35;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				DEVELOPMENT_TEAM = QC35MT888M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -597,9 +603,10 @@
 				GCC_PREFIX_HEADER = "Free/Classes/Free-Prefix.pch";
 				INFOPLIST_FILE = Free/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.genyus.Free;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.genyus.FreeMobile-Conso";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "aaf00b2f-9dfa-4375-a02a-c6e0a96814f7";
+				PROVISIONING_PROFILE_SPECIFIER = "Free Conso APP STORE";
 			};
 			name = Release;
 		};

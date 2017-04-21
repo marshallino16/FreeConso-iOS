@@ -11,6 +11,12 @@
 #import "ConsoController.h"
 #import "StoredDataManager.h"
 #import "ConsoManager.h"
+#import "SnackBarView.h"
+
+
+// Frameworks
+// ----------
+
 #import <SVProgressHUD/SVProgressHUD.h>
 
 
@@ -86,6 +92,16 @@
             self.connectionView.alpha = 1.0f;
         }];
     }
+    
+    // Status bar color
+    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    // Status bar color
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;;
 }
 
 - (void)viewDidLayoutSubviews {
@@ -202,6 +218,8 @@
 #pragma mark Private methods 
 
 - (void)showError {
+    
+    // Shake login view
     CABasicAnimation *shake = [CABasicAnimation animationWithKeyPath:@"position"];
     [shake setDuration:0.1];
     [shake setRepeatCount:3];
@@ -209,6 +227,11 @@
     [shake setFromValue:[NSValue valueWithCGPoint:CGPointMake(self.connectionView.center.x - 7, self.connectionView.center.y)]];
     [shake setToValue:[NSValue valueWithCGPoint:CGPointMake(self.connectionView.center.x + 7, self.connectionView.center.y)]];
     [self.connectionView.layer addAnimation:shake forKey:@"position"];
+    
+    // Display error
+    [SnackBarView snackBarWithTitle:@"OOps, identifiants incorrects" action:@"EDITER" completionHandler:^{
+       // Nothing to do yet
+    }];
 }
 
 
