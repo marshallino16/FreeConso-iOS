@@ -5,4 +5,6 @@ target 'Free' do
 	pod 'AFNetworking', '2.6.1'
 	pod 'SDWebImage', '3.7.3'
 	pod 'SVProgressHUD'
+	pod 'Fabric'
+	pod 'Crashlytics'
 end

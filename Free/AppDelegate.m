@@ -11,6 +11,13 @@
 #import "LoginController.h"
 #import "ViewHelper2.h"
 
+// Frameworks
+// ----------
+
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
+
 @interface AppDelegate ()
 
 @end
@@ -19,6 +26,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // STEP 0: Initialize components
+    // -----------------------------
+    
+    // Fabrics
+    [Fabric with:@[[Crashlytics class]]];
+    
+    
+    // STEP 1: Initialize root view controller
+    // ---------------------------------------
     
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     
@@ -40,6 +57,7 @@
     [window makeKeyAndVisible];
     
     [self setWindow:window];
+    
     return YES;
 }
 
