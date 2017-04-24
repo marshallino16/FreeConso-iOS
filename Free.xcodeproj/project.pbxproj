@@ -11,8 +11,11 @@
 		7904C5581E8D50DA004B51C1 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7904C5561E8D50DA004B51C1 /* LoginController.xib */; };
 		7904C55D1E8E9071004B51C1 /* StoredDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7904C55C1E8E9071004B51C1 /* StoredDataManager.m */; };
 		7994BD8D1EAA4F69007A8641 /* SnackBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994BD8C1EAA4F69007A8641 /* SnackBarView.m */; };
+		79DD7B7E1EAE4BFF00FDB354 /* ConsoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DD7B7D1EAE4BFF00FDB354 /* ConsoManager.m */; };
+		79DD7B811EAE4C0B00FDB354 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DD7B801EAE4C0B00FDB354 /* AppDelegate.m */; };
+		79DD7B851EAE4C1C00FDB354 /* ConsoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DD7B831EAE4C1C00FDB354 /* ConsoController.m */; };
+		79DD7B861EAE4C1C00FDB354 /* ConsoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79DD7B841EAE4C1C00FDB354 /* ConsoController.xib */; };
 		79E404111E896EFE00B92988 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E4040F1E896EFE00B92988 /* LaunchScreen.storyboard */; };
-		79E404171E896F0E00B92988 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E404131E896F0E00B92988 /* AppDelegate.m */; };
 		79E404191E896F0E00B92988 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E404151E896F0E00B92988 /* main.m */; };
 		79E4041A1E896F0E00B92988 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E404161E896F0E00B92988 /* Assets.xcassets */; };
 		79E4042B1E896F3700B92988 /* ConsoStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E4041C1E896F3700B92988 /* ConsoStore.m */; };
@@ -20,9 +23,6 @@
 		79E404311E896F3700B92988 /* Conso.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E404271E896F3700B92988 /* Conso.m */; };
 		79E404321E896F3700B92988 /* ViewHelper2.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E4042A1E896F3700B92988 /* ViewHelper2.m */; };
 		79E4043B1E89746300B92988 /* Bill.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E4043A1E89746300B92988 /* Bill.m */; };
-		79E404401E8A6DAB00B92988 /* ConsoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E4043E1E8A6DAB00B92988 /* ConsoController.m */; };
-		79E404411E8A6DAB00B92988 /* ConsoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E4043F1E8A6DAB00B92988 /* ConsoController.xib */; };
-		79E404441E8A718C00B92988 /* ConsoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E404431E8A718C00B92988 /* ConsoManager.m */; };
 		79EB881E1E8C57C2007CA100 /* ConsoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EB881C1E8C57C1007CA100 /* ConsoCell.m */; };
 		79EB881F1E8C57C2007CA100 /* ConsoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79EB881D1E8C57C1007CA100 /* ConsoCell.xib */; };
 		8DCA4CC3CFCD7E95ECE1F37D /* libPods-Free.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A43548E9D5A9DF427C93177 /* libPods-Free.a */; };
@@ -51,9 +51,14 @@
 		7904C55C1E8E9071004B51C1 /* StoredDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoredDataManager.m; path = Free/Classes/StoredDataManager.m; sourceTree = "<group>"; };
 		7994BD8B1EAA4F69007A8641 /* SnackBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SnackBarView.h; path = Free/Classes/SnackBarView.h; sourceTree = "<group>"; };
 		7994BD8C1EAA4F69007A8641 /* SnackBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnackBarView.m; path = Free/Classes/SnackBarView.m; sourceTree = "<group>"; };
+		79DD7B7C1EAE4BFF00FDB354 /* ConsoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsoManager.h; path = Free/Classes/ConsoManager.h; sourceTree = "<group>"; };
+		79DD7B7D1EAE4BFF00FDB354 /* ConsoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConsoManager.m; path = Free/Classes/ConsoManager.m; sourceTree = "<group>"; };
+		79DD7B7F1EAE4C0B00FDB354 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Free/Classes/AppDelegate.h; sourceTree = "<group>"; };
+		79DD7B801EAE4C0B00FDB354 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Free/Classes/AppDelegate.m; sourceTree = "<group>"; };
+		79DD7B821EAE4C1C00FDB354 /* ConsoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsoController.h; path = Free/Classes/ConsoController.h; sourceTree = "<group>"; };
+		79DD7B831EAE4C1C00FDB354 /* ConsoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConsoController.m; path = Free/Classes/ConsoController.m; sourceTree = "<group>"; };
+		79DD7B841EAE4C1C00FDB354 /* ConsoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConsoController.xib; path = Free/Classes/ConsoController.xib; sourceTree = "<group>"; };
 		79E404101E896EFE00B92988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Free/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		79E404121E896F0E00B92988 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Free/AppDelegate.h; sourceTree = "<group>"; };
-		79E404131E896F0E00B92988 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Free/AppDelegate.m; sourceTree = "<group>"; };
 		79E404141E896F0E00B92988 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Free/Info.plist; sourceTree = "<group>"; };
 		79E404151E896F0E00B92988 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Free/main.m; sourceTree = "<group>"; };
 		79E404161E896F0E00B92988 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Free/Assets.xcassets; sourceTree = "<group>"; };
@@ -70,11 +75,6 @@
 		79E404361E89700600B92988 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Configuration.h; path = Free/Classes/Configuration.h; sourceTree = "<group>"; };
 		79E404391E89746300B92988 /* Bill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bill.h; path = Free/Classes/Bill.h; sourceTree = "<group>"; };
 		79E4043A1E89746300B92988 /* Bill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bill.m; path = Free/Classes/Bill.m; sourceTree = "<group>"; };
-		79E4043D1E8A6DAB00B92988 /* ConsoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsoController.h; path = Free/ConsoController.h; sourceTree = "<group>"; };
-		79E4043E1E8A6DAB00B92988 /* ConsoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConsoController.m; path = Free/ConsoController.m; sourceTree = "<group>"; };
-		79E4043F1E8A6DAB00B92988 /* ConsoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConsoController.xib; path = Free/ConsoController.xib; sourceTree = "<group>"; };
-		79E404421E8A718C00B92988 /* ConsoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsoManager.h; path = Free/ConsoManager.h; sourceTree = "<group>"; };
-		79E404431E8A718C00B92988 /* ConsoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConsoManager.m; path = Free/ConsoManager.m; sourceTree = "<group>"; };
 		79E404451E8A924900B92988 /* Free-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Free-Prefix.pch"; path = "Free/Classes/Free-Prefix.pch"; sourceTree = "<group>"; };
 		79EB881B1E8C57C1007CA100 /* ConsoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsoCell.h; path = Free/Classes/ConsoCell.h; sourceTree = "<group>"; };
 		79EB881C1E8C57C1007CA100 /* ConsoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConsoCell.m; path = Free/Classes/ConsoCell.m; sourceTree = "<group>"; };
@@ -107,8 +107,8 @@
 		7904C5591E8E9025004B51C1 /* Conso Manager */ = {
 			isa = PBXGroup;
 			children = (
-				79E404421E8A718C00B92988 /* ConsoManager.h */,
-				79E404431E8A718C00B92988 /* ConsoManager.m */,
+				79DD7B7C1EAE4BFF00FDB354 /* ConsoManager.h */,
+				79DD7B7D1EAE4BFF00FDB354 /* ConsoManager.m */,
 			);
 			name = "Conso Manager";
 			sourceTree = "<group>";
@@ -129,6 +129,16 @@
 				7994BD8C1EAA4F69007A8641 /* SnackBarView.m */,
 			);
 			name = Misc;
+			sourceTree = "<group>";
+		};
+		79DD7B871EAE4C2000FDB354 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79DD7B821EAE4C1C00FDB354 /* ConsoController.h */,
+				79DD7B831EAE4C1C00FDB354 /* ConsoController.m */,
+				79DD7B841EAE4C1C00FDB354 /* ConsoController.xib */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		79E404061E896EA400B92988 /* Supporting Files */ = {
@@ -195,8 +205,8 @@
 		79E4040C1E896ED500B92988 /* App Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				79E404121E896F0E00B92988 /* AppDelegate.h */,
-				79E404131E896F0E00B92988 /* AppDelegate.m */,
+				79DD7B7F1EAE4C0B00FDB354 /* AppDelegate.h */,
+				79DD7B801EAE4C0B00FDB354 /* AppDelegate.m */,
 			);
 			name = "App Delegate";
 			sourceTree = "<group>";
@@ -204,9 +214,7 @@
 		79E4040D1E896EDC00B92988 /* Conso */ = {
 			isa = PBXGroup;
 			children = (
-				79E4043D1E8A6DAB00B92988 /* ConsoController.h */,
-				79E4043E1E8A6DAB00B92988 /* ConsoController.m */,
-				79E4043F1E8A6DAB00B92988 /* ConsoController.xib */,
+				79DD7B871EAE4C2000FDB354 /* Controller */,
 				79EB88181E8C5458007CA100 /* Cells */,
 			);
 			name = Conso;
@@ -387,11 +395,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79DD7B861EAE4C1C00FDB354 /* ConsoController.xib in Resources */,
 				79EB881F1E8C57C2007CA100 /* ConsoCell.xib in Resources */,
 				79E4041A1E896F0E00B92988 /* Assets.xcassets in Resources */,
 				79E404111E896EFE00B92988 /* LaunchScreen.storyboard in Resources */,
 				7904C5581E8D50DA004B51C1 /* LoginController.xib in Resources */,
-				79E404411E8A6DAB00B92988 /* ConsoController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,16 +460,16 @@
 			files = (
 				7904C55D1E8E9071004B51C1 /* StoredDataManager.m in Sources */,
 				79E4043B1E89746300B92988 /* Bill.m in Sources */,
+				79DD7B851EAE4C1C00FDB354 /* ConsoController.m in Sources */,
 				7904C5571E8D50DA004B51C1 /* LoginController.m in Sources */,
 				79E404191E896F0E00B92988 /* main.m in Sources */,
-				79E404401E8A6DAB00B92988 /* ConsoController.m in Sources */,
 				79E404311E896F3700B92988 /* Conso.m in Sources */,
+				79DD7B7E1EAE4BFF00FDB354 /* ConsoManager.m in Sources */,
+				79DD7B811EAE4C0B00FDB354 /* AppDelegate.m in Sources */,
 				79EB881E1E8C57C2007CA100 /* ConsoCell.m in Sources */,
-				79E404441E8A718C00B92988 /* ConsoManager.m in Sources */,
 				79E4042C1E896F3700B92988 /* JSONHelper.m in Sources */,
 				79E404321E896F3700B92988 /* ViewHelper2.m in Sources */,
 				79E4042B1E896F3700B92988 /* ConsoStore.m in Sources */,
-				79E404171E896F0E00B92988 /* AppDelegate.m in Sources */,
 				7994BD8D1EAA4F69007A8641 /* SnackBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,6 +580,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = QC35MT888M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
