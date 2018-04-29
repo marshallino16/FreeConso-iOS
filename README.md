@@ -2,8 +2,6 @@
 
 Suivi de consommation Free Mobile pour iOS.
 
-[![Download](https://devimages.apple.com.edgekey.net/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg)](https://itunes.apple.com/us/app/free-mobile-suivi-conso/id1229133686?ls=1&mt=8)
-
 ## Consommations disponibles
 
 * [x] Data (3G / 4G) 
